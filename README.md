@@ -4,10 +4,9 @@ Project for CS008: Data Structures and Algorithms with Juan Leon.
 
 ## Contents
 
-- [Super Warehouse Store](#super-warehouse-store)
-  - [Important dates](#important-dates)
-  - [Project instructions](#project-instructions)
-  - [Rubric](#rubric)
+* [Important Dates](#important-dates)
+* [Project Instructions](#project-instructions)
+* [Rubric](#rubric)
 
 ## Important Dates
 
