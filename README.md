@@ -1,13 +1,16 @@
 # Super Warehouse Store
 
-## Table of Contents
+Project for CS008: Data Structures and Algorithms with Juan Leon.
+
+## Contents
 
 - [Super Warehouse Store](#super-warehouse-store)
   - [Important dates](#important-dates)
   - [Project instructions](#project-instructions)
   - [Rubric](#rubric)
 
-## Important dates
+## Important Dates
+
 March 5, 2025 \- Agile stories within some agile project management software.    Stories should include proper description, any tasks that need to be completed, as well as the definition of done.
 
 March 12, 2025 \- Sprint 1 \- First presentation of your project to the customer will need to be presented.  You will indicate what stories you have completed and what stories have yet to be completed.  
@@ -16,8 +19,8 @@ March 26, 2025 \- Sprint 3 \- Third presentation of your project to the customer
 
 Note:  You will also need to submit a list indicating each group member’s accomplishments, roles, contributions to the project.
 
-## Project instructions
-#project-instructions
+## Project Instructions
+
 You are to write a program that services members of Wholesale Club.  You must use a container class with at least one overloaded operator.  You should also describe the growth rate of your program for various operations/functions. At least one class must contain a pointer (a copy constructor needs to be written and tested).   Highlight the above.  Write at least 15 agile stories (including description, tasks, test scenarios, and story points) before you start to develop software.
 
 Wholesale Club has two types of members: basic and preferred.   
@@ -53,7 +56,6 @@ Generate the following reports/request at any time:
 11. Determine if any basic customer should convert their membership to preferred status.  
 12. Determine if any preferred customer should convert their membership to basic status.  
 13. Save all changes between executions.  
-    
 
 A user should also be able to specify the above reports for basic members only, preferred members only, or all members.
 
@@ -62,7 +64,7 @@ Design a very readable, easy to use graphical interface to demonstrate your prog
 Submit an UML class, use case, and state diagrams with your project.
 
 ## Rubric
-#rubric
+
 The assignment will be graded using the following scale:
 
 |  | Value |
