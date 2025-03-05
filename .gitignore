@@ -1,6 +1,9 @@
 # OSX litter
 .DS_Store
 
+# Visual Studio litter
+.vs
+
 # Build folder
 build/*
 
