@@ -1,5 +1,5 @@
 # Super Warehouse Store
-Tomi (^.^)/Jaden/Uriel/Ty
+Tomi (^.^)/Jaden/Uriel/
 
 Project for CS008: Data Structures and Algorithms with Juan Leon.
 
