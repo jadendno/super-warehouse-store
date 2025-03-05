@@ -1,8 +1,9 @@
 # Super Warehouse Store
+Tomi (^.^)/
 
 Project for CS008: Data Structures and Algorithms with Juan Leon.
 
-## Contents
+## Content
 
 * [Important Dates](#important-dates)
 * [Project Instructions](#project-instructions)
