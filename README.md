@@ -9,7 +9,9 @@ Project for CS008: Data Structures and Algorithms with Juan Leon.
 * [Rubric](#rubric)
 
 ## Build instructions
-- `sqlite` `qt`
+- make sure you have `sqlite3`
+- eventually we will need `qt`
+- run Make
 
 
 ## Important Dates
