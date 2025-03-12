@@ -1,5 +1,4 @@
 # Super Warehouse Store
-Tomi (^.^)/Jaden/Uriel/
 
 Project for CS008: Data Structures and Algorithms with Juan Leon.
 
@@ -8,6 +7,10 @@ Project for CS008: Data Structures and Algorithms with Juan Leon.
 * [Important Dates](#important-dates)
 * [Project Instructions](#project-instructions)
 * [Rubric](#rubric)
+
+## Build instructions
+- `sqlite` `qt`
+
 
 ## Important Dates
 

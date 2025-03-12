@@ -4,6 +4,9 @@
 # Visual Studio litter
 .vs
 
+# Database file
+.db
+
 # Build folder
 build/*
 
