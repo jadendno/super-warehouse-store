@@ -163,7 +163,7 @@
        <string>BASIC MEMBERS</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_7">
+     <widget class="QPushButton" name="allMemPush">
       <property name="geometry">
        <rect>
         <x>20</x>
@@ -173,7 +173,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>MEMBER LOOKUP</string>
+       <string>ALL MEMBERS</string>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_8">
@@ -186,16 +186,16 @@
        </rect>
       </property>
       <property name="text">
-       <string>MEMBER PURCHASES</string>
+       <string>MEMBER LOOKUP</string>
       </property>
      </widget>
      <widget class="QFrame" name="frame">
       <property name="geometry">
        <rect>
-        <x>240</x>
+        <x>230</x>
         <y>30</y>
         <width>531</width>
-        <height>391</height>
+        <height>381</height>
        </rect>
       </property>
       <property name="frameShape">
@@ -204,18 +204,56 @@
       <property name="frameShadow">
        <enum>QFrame::Shadow::Raised</enum>
       </property>
-      <widget class="QLabel" name="infoLabel">
+      <widget class="QLineEdit" name="memberSearch">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>10</y>
+         <width>251</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QScrollArea" name="scrollArea">
        <property name="geometry">
         <rect>
          <x>10</x>
          <y>10</y>
-         <width>511</width>
-         <height>371</height>
+         <width>251</width>
+         <height>361</height>
         </rect>
        </property>
-       <property name="text">
-        <string>TextLabel</string>
+       <property name="verticalScrollBarPolicy">
+        <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOn</enum>
        </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>233</width>
+          <height>359</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignTop</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
       </widget>
      </widget>
     </widget>
