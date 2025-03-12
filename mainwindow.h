@@ -43,6 +43,12 @@ private slots:
 
     void on_pushButton_5_clicked();
 
+    void on_pushButton_6_clicked();
+
+    void on_allMemPush_clicked();
+
+    void on_memberSearch_textEdited(const QString &arg1);
+
 private:
     Ui::MainWindow *ui;
     WarehouseStock *manager;

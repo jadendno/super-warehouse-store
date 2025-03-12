@@ -10,8 +10,9 @@ MainWindow::MainWindow(WarehouseStock *manager, QWidget *parent)
 {
     ui->setupUi(this);
     ui->startMenu->setCurrentIndex(0);
+    ui->memberSearch->hide();
 
-    if (!manager) {
+    /* if (!manager) {
         qDebug() << "Manager is NULL!";
 
     } else {
@@ -24,6 +25,7 @@ MainWindow::MainWindow(WarehouseStock *manager, QWidget *parent)
     } else {
         qDebug() << "Member list has" << pShoppers.size() << "members";
     }
+    */
 }
 
 MainWindow::~MainWindow()
@@ -81,7 +83,6 @@ void MainWindow::on_pushButton_2_clicked()
 void MainWindow::on_pushButton_3_clicked()
 {
     ui->startMenu->setCurrentIndex(3);
-    ui->infoLabel->setText("Will Look nicer later! Try the first button!");
 }
 
 
@@ -89,16 +90,18 @@ void MainWindow::on_pushButton_5_clicked()
 {
 
     const std::vector<Shopper*> pShoppers = manager->getMemberList();
+    /*
     if (pShoppers.empty()) {
         qDebug() << "Member list is empty!";
     } else {
         qDebug() << "Member list has" << pShoppers.size() << "members";
     }
+    */
 
     QString displayinfo;
 
 
-    qDebug() << "Number of shoppers: " << manager->getMemberlength();
+    /* qDebug() << "Number of shoppers: " << manager->getMemberlength(); */
 
     for (Shopper* shopper : pShoppers) {
 
@@ -109,6 +112,50 @@ void MainWindow::on_pushButton_5_clicked()
         }
     }
 
-    ui->infoLabel->setText(displayinfo);
+    ui->label->setText(displayinfo);
+}
+
+
+void MainWindow::on_pushButton_6_clicked()
+{
+
+    QString displayinfo2;
+
+    const std::vector<Shopper*> pShoppers = manager->getMemberList();
+    for (Shopper* shopper : pShoppers) {
+
+        if (!shopper->isMember()) {
+            displayinfo2 += "Shopper Name: " + shopper->getmName() + "\n";
+            displayinfo2 += "Shopper Id: " + QString::number(shopper->getmId()) + "\n";
+            displayinfo2 += "Shopper Expiration Date: " + QString::number(shopper->getmEd()) + "\n\n";
+        }
+    }
+
+    ui->label->setText(displayinfo2);
+}
+
+
+void MainWindow::on_allMemPush_clicked()
+{
+    QString displayinfo;
+
+    const std::vector<Shopper*> pShoppers = manager->getMemberList();
+    for (Shopper* shopper : pShoppers) {
+
+        displayinfo += "Shopper Name: " + shopper->getmName() + "\n";
+        displayinfo += "Shopper Id: " + QString::number(shopper->getmId()) + "\n";
+        displayinfo += "Shopper Expiration Date: " + QString::number(shopper->getmEd()) + "\n\n";
+    }
+
+    ui->label->setText(displayinfo);
+
+
+
+}
+
+
+ void MainWindow::on_memberSearch_textEdited(const QString &arg1)
+{
+    ui->memberSearch->show();
 }
 
